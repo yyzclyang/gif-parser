@@ -1,0 +1,23 @@
+{
+  "name": "gif-parser",
+  "version": "1.0.0",
+  "description": "gif parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yyzclyang/gif-parser.git"
+  },
+  "keywords": [
+    "gif",
+    "parser"
+  ],
+  "author": "yyzcl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yyzclyang/gif-parser/issues"
+  },
+  "homepage": "https://github.com/yyzclyang/gif-parser#readme"
+}
