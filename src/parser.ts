@@ -277,7 +277,7 @@ function GifParser(arrayBuffer: ArrayBuffer): Gif {
          * 1: 存在
          * 0: 不存在
          */
-        const transparentColorFlag = globalColorTableFlag & 1;
+        const transparentColorFlag = gcePacketField & 1;
         /**
          * 帧延迟
          */
