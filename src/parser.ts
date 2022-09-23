@@ -159,7 +159,7 @@ function GifParser(arrayBuffer: ArrayBuffer): Gif {
     /**
      * lzw decode 之后的 image data
      */
-    const lzwDecodeImageData = lzwDecode(lzwMinimumCodeSize, imageData);
+    const lzwDecodeImageData = lzwDecode(lzwMinimumCodeSize, imageData, imageWidth * imageHeight);
 
     // parse color table
     /**
