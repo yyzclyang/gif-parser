@@ -55,7 +55,7 @@ Image Descriptor 包含处理基于表格的图像所需的参数
    > 1. Local Color Table Flag，大小为 1 bit，作用与 Global Color Table Flag 相似，表示是否存在 Local Color Table
    > 2. Interlace Flag，大小为 1 bit，标识图片是否为隔行扫描，1 表示隔行扫描，0 表示否
    > 3. Sort Flag，大小为 1 bit，表示 Local Color Table 是否被排序，1 表示有，0 表示无
-   > 4. Bits Reversed，大小为 2 bits，保留字段
+   > 4. Reversed，大小为 2 bits，保留字段
    > 5. Local Color Table Size，大小为 3 bits，与 Global Color Table Size 计算方式类似，计算结果代表 Local Color Table 的长度
 
 ### 4.2 Local Color Table
@@ -85,7 +85,7 @@ Local Color Table 表示局部色彩表，类似于全局色彩表。大小为 3
    > 大小为 1 Byte，扩展标识，值为 0x21
 2. Graphic Control Label
    > 大小为 1 Byte，当前拓展标识，值为 0xF9
-3. Block Size 
+3. Block Size
    > 大小为 1 Byte，表示当前拓展后面的数据大小（单位 Byte），不包括 Block Terminator，在当前拓展里值为 4
 4. Packet Field，大小为 1 Byte
    > 1. Reserved，大小为 3 bits，保留字段
@@ -146,7 +146,7 @@ Local Color Table 表示局部色彩表，类似于全局色彩表。大小为 3
    > 大小为 1 Byte，标识当前扩展的结束，值为 0x00
 
 ### 5.4 Application Extension
-程序扩展，主要包含了一些应用信息
+应用扩展，主要包含了一些应用信息
 
 1. Extension Introducer
    > 大小为 1 Byte，扩展标识，值为 0x21
